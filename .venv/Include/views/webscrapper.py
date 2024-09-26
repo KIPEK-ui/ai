@@ -1,11 +1,11 @@
 import streamlit as st
-from scrapper.scrape import (
+from webscrapper.scrape import (
     scrape_website,
     extract_body_content,
     clean_body_content,
     split_dom_content,
 )
-from llm.parse import parse_with_ollama
+from webscrapper.parse import parse_with_ollama
 
 # Streamlit UI
 st.title("AI Web Scraper")

@@ -10,12 +10,25 @@ webscrapper_page = st.Page(
     icon=":material/terrain:",
     default=True,
 )
-
-
+imageupscaler_page = st. Page(
+    "views/upscaler.py",
+    title="Image Upscaler App",
+    icon=":material/terrain:",
+)
+chatbot_page = st. Page(
+    "views/chatbot.py",
+    title="Chatbot App",
+    icon=":material/terrain:",
+)
+footballanalysis_page = st. Page(
+    "views/fbanalysis.py",
+    title="Football Analysis App",
+    icon=":material/terrain:",
+)
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "AI APPs": [webscrapper_page],
+        "AI APPs": [webscrapper_page,imageupscaler_page,chatbot_page,footballanalysis_page]
     }
 )
 
